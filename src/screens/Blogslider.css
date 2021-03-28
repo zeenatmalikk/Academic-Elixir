@@ -1,0 +1,19 @@
+.text1{
+    font-size: 44px;
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text2{
+    font-size: 22px;
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 10%;
+}
+
+.bgstyle{
+    background-color:#4F4484;
+    color: #ffff;
+  
+}

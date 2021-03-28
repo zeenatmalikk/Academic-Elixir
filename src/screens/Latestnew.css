@@ -1,0 +1,32 @@
+.heading{
+    font-size: 40px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   color: #33286C;
+   margin-top: 10%;
+   margin-bottom: 5%;
+}
+.Card{
+    width: 585px;
+}
+
+img{
+    height: 100%;
+}
+
+.Card:hover{
+    
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1); 
+      
+}
+
+.text{
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 5%;
+    font-size: 17px;
+    color:#33286C;
+}
+
