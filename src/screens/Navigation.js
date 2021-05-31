@@ -1,10 +1,11 @@
 import { Grid, Typography, Button, List } from "@material-ui/core";
 import React from "react";
-import "./Navigation.css"
+import "./Navigation.css";
 import InputBase from "@material-ui/core/InputBase";
 import { fade, makeStyles } from "@material-ui/core/styles";
 
 import SearchIcon from "@material-ui/icons/Search";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   search: {
@@ -32,10 +33,9 @@ const useStyles = makeStyles((theme) => ({
   },
   inputRoot: {
     color: "blue",
-    
   },
   inputInput: {
-  //  padding: theme.spacing(1, 1, 1, 0),
+    //  padding: theme.spacing(1, 1, 1, 0),
     // vertical padding + font size from searchIcon
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create("width"),
@@ -48,14 +48,19 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   hover: {
-    
     "&:hover": {
-      backgroundColor:"whitesmoke",
-       
+      backgroundColor: "whitesmoke",
     },
   },
- 
-
+  btnstyle: {
+   
+    fontWeight: "bold",
+    fontFamily: "Times New Roman",
+    // marginleft: 20,
+    fontsize: 10,
+    // paddingInline: 22,
+    color: "#12232E",
+  },
 }));
 
 const Navigation = () => {
@@ -67,7 +72,8 @@ const Navigation = () => {
         <Grid
           item
           md={2}
-         
+          sm={12}
+          xs={12}
           style={{
             display: "flex",
             backgroundColor: "whitesmoke",
@@ -83,7 +89,7 @@ const Navigation = () => {
           />
           <Typography
             variant="h6"
-          classname="text1"
+            // classname="text1"
             style={{
               fontFamily: "unset",
               marginLeft: 7,
@@ -91,108 +97,45 @@ const Navigation = () => {
               fontWeight: "bold",
               textAlign: "center",
               alignSelf: "center",
-              color:"#4F4484"
+              color: "#4F4484",
             }}
           >
-           
             ACADEMIC ELIXIR
           </Typography>
         </Grid>
-        <Grid item md={7} style={{ display: "flex" }}>
+        <Grid item md={7} xs={12} sm={12} style={{ display: "flex" , alignItems:"center", justifyContent:"space-evenly",}}>
           <Button className={classes.hover}>
-            <Typography
-            
-              style={{
-                marginTop: 7,
-                fontWeight: "bold",
-                fontFamily: "initial",
-                marginleft: 20,
-                fontsize: 10,
-                paddingInline: 22,
-                color:"#12232E"
-              }}
-            >
-              Home
-            </Typography>
+            <Typography className={classes.btnstyle}>Home</Typography>
           </Button>
-          <Button  className={classes.hover}>
-            <Typography
-              style={{
-                marginTop: 8,
-                fontWeight: "bold",
-                fontFamily: "initial",
-                marginleft: 20,
-                fontsize: 10,
-                paddingInline: 22,
-                color:"#12232E"
-              }}
-            >
-              About
-            </Typography>
-          </Button>
-          <Button  className={classes.hover}>
-            <Typography
-              style={{
-                marginTop: 7,
-                fontWeight: "bold",
-                fontFamily: "initial",
-                marginleft: 10,
-                fontsize: 10,
-                paddingInline: 22,
-                color:"#12232E"
-              }}
-            >
-              Courses
-            </Typography>
-          </Button>
+          <Link to="/abt" style={{textDecoration:"none"}}>
           <Button className={classes.hover}>
-            <Typography
-              style={{
-                marginTop: 7,
-                fontWeight: "bold",
-                fontFamily: "initial",
-                marginleft: 20,
-                fontsize: 10,
-                paddingInline: 22,
-                color:"#12232E"
-              }}
-            >
-              Instructors
-            </Typography>
+            <Typography className={classes.btnstyle}>About</Typography>
           </Button>
+          </Link>
+          <Link to="/course" style={{textDecoration:"none"}}>
           <Button className={classes.hover}>
-            <Typography
-              style={{
-                marginTop: 7,
-                fontWeight: "bold",
-                fontFamily: "initial",
-                marginleft: 20,
-                fontsize: 10,
-                paddingInline: 22,
-                color:"#12232E"
-              }}
-            >
-              Blog
-            </Typography>
+            <Typography className={classes.btnstyle}>Courses</Typography>
           </Button>
-          
+          </Link>
+          <Link to="/instructor"  style={{textDecoration:"none"}}>
           <Button className={classes.hover}>
-            <Typography
-              style={{
-                marginTop: 7,
-                fontWeight: "bold",
-                fontFamily: "initial",
-                marginleft: 20,
-                fontsize: 10,
-                paddingInline: 22,
-                color:"#12232E"
-              }}
-            >
-              Contact
-            </Typography>
+            <Typography className={classes.btnstyle}>Instructors</Typography>
           </Button>
+          </Link>
+          {/* <Link to="/blog"> */}
+          {/* <Button className={classes.hover}>
+            <Typography className={classes.btnstyle}>Blog</Typography>
+          </Button>
+          </Link> */}
+
+         <Link to="/contactus" style={{textDecoration:"none"}}>
+         <Button className={classes.hover}>
+            <Typography className={classes.btnstyle}>Contact</Typography>
+          </Button>
+         </Link>
         </Grid>
-        <Grid item md={3} style={{paddingTop:40}} >
+        
+        <Grid item md={3} style={{ paddingTop: 40 }}>
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />

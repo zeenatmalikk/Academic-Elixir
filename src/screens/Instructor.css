@@ -1,0 +1,21 @@
+.content-inst{
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.img-inst{
+    height:252px;
+    opacity: 1;
+    display: block;
+    /* width: 100%; */
+    
+    /* transition: .5s ease; */
+    backface-visibility: hidden;
+}
+
+.faculty{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #00063d;
+}

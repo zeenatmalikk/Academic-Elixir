@@ -25,6 +25,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const Header = () => {
+  
   const classes = useStyles();
   return (
     <div>
@@ -71,7 +72,7 @@ const Header = () => {
         <Grid item md={4} />
 
         <Grid item md={2} style={{}}>
-          {/* <Link to="/login" style={{ textDecoration: "none" }}> */}
+         
           <Button
             variant="outlined"
             color="primary"
@@ -86,7 +87,8 @@ const Header = () => {
           >
             LOGIN
           </Button>
-          {/* </Link> */}
+         
+          <Link to="/reg" style={{ textDecoration: "none" }}>
           <Button
             variant="outlined"
             color="primary"
@@ -99,6 +101,7 @@ const Header = () => {
           >
             REGISTER
           </Button>
+          </Link>
         </Grid>
       </Grid>
     </div>

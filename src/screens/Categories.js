@@ -84,7 +84,7 @@ const Categories = () => {
                   style={{ height: 100, width: 100, marginRight: 150 }}
                 />
                 <Typography
-                  style={{ textAlign: "left", margin: 30, color:"#FFFFFF"  }}
+                  style={{ textAlign: "left", margin: 30, color:"#33286C"  }}
                   variant="h4"
                 >
                   {item.heading}
@@ -114,7 +114,7 @@ const Categories = () => {
                   style={{ height: 100, width: 100, marginRight: 150 }}
                 />
                 <Typography
-                  style={{ textAlign: "left", margin: 30 , color:"#FFFFFF" }}
+                  style={{ textAlign: "left", margin: 30 , color:"#33286C" }}
                   variant="h4"
                 >
                   {item.heading}

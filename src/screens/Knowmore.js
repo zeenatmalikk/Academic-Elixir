@@ -11,7 +11,7 @@ import HelpIcon from "@material-ui/icons/Help";
 
 export const Knowmore = () => {
   return (
-    <div style={{ marginTop: 280, paddingBottom: 200 }}>
+    <div style={{ marginTop: 280, paddingBottom: 150 }}>
       <Grid container>
         <Grid item md={1} />
         <Grid item md={5}>
