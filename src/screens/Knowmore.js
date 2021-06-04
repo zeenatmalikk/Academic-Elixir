@@ -4,7 +4,6 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import FormatListBulletedIcon from "@material-ui/icons/FormatListBulleted";
-import Avatar from "@material-ui/core/Avatar";
 import EmojiObjectsIcon from "@material-ui/icons/EmojiObjects";
 import GradeIcon from "@material-ui/icons/Grade";
 import HelpIcon from "@material-ui/icons/Help";

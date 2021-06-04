@@ -13,13 +13,13 @@ import Footer from "./screens/Footer";
 import { Latestnews } from "./screens/Latestnews";
 import Blogslider from "./screens/Blogslider";
 import Dynaamic from "./screens/Dynaamic";
-import { Register } from "./Register";
 import About from "./screens/About";
 import Courses from "./screens/Courses";
 import { Instructor } from "./screens/Instructor";
 import { Blog } from "./screens/Blog";
 import Contact from "./screens/Contact";
 import Footernew from "./screens/Footernew";
+import Register from "./screens/Register";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       <div>
         {/* <Dynaamic /> */}
         {/* <Header /> */}
-
+{/* 
         <Navigation />
 
         <Switch>
@@ -54,8 +54,8 @@ function App() {
         <Teachers />
         <Knowmore />
         <Latestnews />
-        <Footernew />
-        
+        <Footernew /> */}
+<Register/>
       </div>
     </Router>
   );
