@@ -20,17 +20,23 @@ import { Blog } from "./screens/Blog";
 import Contact from "./screens/Contact";
 import Footernew from "./screens/Footernew";
 import Register from "./screens/Register";
+import { Login } from "./screens/Login";
 
 function App() {
   return (
     <Router>
       <div>
         {/* <Dynaamic /> */}
-        {/* <Header /> */}
-{/* 
-        <Navigation />
+        <Header />
 
+        <Navigation />
         <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
           <Route path="/blog">
             <Blog />
           </Route>
@@ -47,7 +53,8 @@ function App() {
             <Instructor />
           </Route>
         </Switch>
-        <Getstarted />
+
+        {/* <Getstarted />
         <Categories />
         <Topics />
         <Popcourses />
@@ -55,7 +62,6 @@ function App() {
         <Knowmore />
         <Latestnews />
         <Footernew /> */}
-<Register/>
       </div>
     </Router>
   );

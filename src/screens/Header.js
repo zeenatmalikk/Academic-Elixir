@@ -73,6 +73,7 @@ const Header = () => {
 
         <Grid item md={2} style={{}}>
          
+          <Link to="/login">
           <Button
             variant="outlined"
             color="primary"
@@ -87,8 +88,9 @@ const Header = () => {
           >
             LOGIN
           </Button>
+          </Link>
          
-          <Link to="/reg" style={{ textDecoration: "none" }}>
+          <Link to="/register" style={{ textDecoration: "none" }}>
           <Button
             variant="outlined"
             color="primary"

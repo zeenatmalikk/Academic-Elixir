@@ -1,0 +1,28 @@
+.btnlog{
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redirect{
+    margin-top: 4%;
+
+}
+
+.border{
+    background:#fff; 
+    padding:0 10px;
+}
+
+.red-pg{
+    text-align: center;
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+}
+
+.bgwhite{
+    background:#fff; 
+    padding:0 10px;
+}

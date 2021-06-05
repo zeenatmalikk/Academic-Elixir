@@ -4,6 +4,7 @@ import {
   Container,
   FormControl,
   Grid,
+  Link,
   makeStyles,
   MenuItem,
   Select,
@@ -111,7 +112,7 @@ const Register = () => {
   const classes = useStyles();
   return (
     <div style={{backgroundColor:"#2B2B7F"}}>
-      <Container style={{padding: 0,  }}>
+      <Container style={{padding: 0, }}>
       <Typography variant="h2" className={classes.regform}>
                       Registeration form
                   </Typography>
@@ -295,6 +296,18 @@ const Register = () => {
                     <Button className={classes.btnreg}>
                         Register
                     </Button>
+
+                </div>
+                <div className="redirect-login">
+                  <h2 className="red-pg-log">
+                    <span className="bgwhitelog">
+                     Already have an account?
+                      <Link to="/login">
+                   
+                        <span>Login</span>
+                      </Link>
+                    </span>
+                  </h2>
                 </div>
                 {/* </div> */}
               </CardContent>
